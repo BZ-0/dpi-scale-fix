@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome Mutter scale fix",
+    "description": "Setting real device pixel ratio for scaling.",
+    "version": "0.0.1",
+    "background": {
+        "service_worker": "rescale.js",
+        "type": "module"
+    },
+    "permissions": [
+        "scripting", "activeTab", "tabs"
+    ],
+    "host_permissions":[
+      "https://*/*",
+      "http://*/*",
+      "<all_urls>"
+    ]
+}
